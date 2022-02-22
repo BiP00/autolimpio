@@ -60,7 +60,8 @@
 
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal">Lavados</h1>
-                <h4 class="fs-5 text-muted">Eliga la mejor opción para sus necesidades con nuestros servicios profesionales.</h4>
+                <h4 class="fs-5 text-muted">Eliga la mejor opción para sus necesidades con nuestros servicios
+                    profesionales.</h4>
             </div>
         </header>
 
@@ -169,6 +170,7 @@
                         <input type="input" class="form-control" id="direccion" placeholder="Avda. Bilbao 555" required>
                     </div>
                     <div class="mb-3 inputContainer">
+                        <label for="comuna" class="form-label">Comuna</label>
                         <select class="form-control">
                             <option id="temuco">Temuco</option>
                             <option id="pitrufquen">Pitrufquén</option>
@@ -177,7 +179,38 @@
                             <option id="pucon">Pucón</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-lg btn-primary">Enviar</button>
+
+
+                    <div class="mb-3 inputContainer">
+                        <label for="tipoVehiculo" class="form-label">Tipo de Vehículo</label>
+                        <select class="form-control">
+                            <option id="auto">Auto</option>
+                            <option id="furgon">Furgón</option>
+                            <option id="camion">Camión</option>
+                            <option id="camioneta">Camioneta</option>
+                            <option id="moto">Moto</option>
+                        </select>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="marca" class="form-label">Marca</label>
+                        <input type="input" class="form-control" placeholder="Mercedez Benz" id="marca">
+
+                        <div class="mb-3 inputContainer">
+                            <label for="modelo" class="form-label">Modelo</label>
+                            <input type="input" class="form-control" placeholder="A220" id="modelo">
+                        </div>
+                        <div class="mb-3 inputContainer">
+                            <label for="anoFabricacion" class="form-label">Año de Fabricación</label>
+                            <input type="number" class="form-control" placeholder="2022" id="anoFabricacion">
+                        </div>
+                        <div class="mb-3 inputContainer">
+                        <label for="revisionTecnica" class="form-label">Revisión Técnica al Día?</label>
+                        <select class="form-control">
+                            <option id="si">Si</option>
+                            <option id="no">No</option>
+                        </select>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary">Enviar</button>
             </form>
         </div>
     </div>
